@@ -6,6 +6,21 @@ import numpy as np
 from constants import PARAM_LABEL_MAP, PARAM_ORDER, PARAM_NAMES
 
 def get_AIC(chi2, n_params):
+    """
+    Calculates the Akaike Information Criterion (AIC) value.
+
+    Parameters
+    ----------
+    chi2 : float
+        Total chi squared value.
+    n_params : int
+        Number of parameters.
+
+    Returns
+    -------
+    float
+        AIC value.
+    """
     aic = chi2 + 2 * n_params
     return aic
 
