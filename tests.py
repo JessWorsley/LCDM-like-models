@@ -25,6 +25,23 @@ def get_AIC(chi2, n_params):
     return aic
 
 def get_BIC(chi2, n_params, n_obs):
+    """
+    Calculates the Bayesian Information Criterion (BIC) value.
+
+    Parameters
+    ----------
+    chi2 : float
+        Total chi squared value.
+    n_params : int
+        Number of parameters.
+    n_obs : int
+        Number of observations.
+
+    Returns
+    -------
+    float
+        BIC value.
+    """
     bic = chi2 + n_params * np.log(n_obs)
     return bic
 
