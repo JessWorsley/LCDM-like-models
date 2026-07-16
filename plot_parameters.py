@@ -66,23 +66,6 @@ eps, c1, c2 = get_parameters(datasets['all_data'])
 all_data = 'Planck + Union3 + Pantheon+ + DESY5'
 desi_sn_data = 'Union3 + Pantheon+ + DESY5'
 
-print(c1)
-
-# eps_1 = model_1[model_1['dataset']==all_data]['eps_mean'].iloc[0]
-# eps_2 = model_2[model_2['dataset']==all_data]['eps_mean'].iloc[0]
-# eps_3 = model_3[model_3['dataset']==all_data]['eps_mean'].iloc[0]
-# eps = [eps_1, eps_2, eps_3]
-
-# c1_1 = model_1[model_1['dataset']==all_data]['c1_mean'].iloc[0]
-# c1_2 = model_2[model_2['dataset']==all_data]['c1_mean'].iloc[0]
-# c1_3 = model_3[model_3['dataset']==all_data]['c1_mean'].iloc[0]
-# c1 = [c1_1, c1_2, c1_3]
-
-# c2_1 = model_1[model_1['dataset']==all_data]['c2_mean'].iloc[0]
-# c2_2 = model_2[model_2['dataset']==all_data]['c2_mean'].iloc[0]
-# c2_3 = model_3[model_3['dataset']==all_data]['c2_mean'].iloc[0]
-# c2 = [c2_1, c2_2, c2_3]
-
 w0_1 = models['model_1'][['wDE0_mean', 'wDE0_plus', 'wDE0_minus']].iloc[-1].tolist()
 w0_2 = models['model_2'][['wDE0_mean', 'wDE0_plus', 'wDE0_minus']].iloc[-1].tolist()
 w0_3 = models['model_3'][['wDE0_mean', 'wDE0_plus', 'wDE0_minus']].iloc[-1].tolist()
