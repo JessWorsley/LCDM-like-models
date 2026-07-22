@@ -42,10 +42,6 @@ def background_analytical(theta, z_eval, model='model_1', exp_threshold=EXP_THRE
         h = H0 * np.sqrt( ( 2 * (1 + z_eval)**exponent + (j0 - q0 * (1 + 2 * q0))/(1 + q0)**2 ) / denominator )
         Om = ( Om0 * (z_eval+1)**3 * (j0+3*q0+2) ) / ( (q0+1)**2 * ( 2*(z_eval+1)**((j0+3*q0+2)/(q0+1)) + (j0-q0*(2*q0+1))/(q0+1)**2))
 
-        # try:
-        #     return h, Om
-        # except Exception:
-        #     return None
         return h, Om
         
     elif model == 'model_2' :
